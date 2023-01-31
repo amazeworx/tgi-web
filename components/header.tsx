@@ -339,13 +339,18 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link href="/vaksinasi-covid" className="active:bg-tgi-darkblue">
+                          News
                         </Link>
                       </li>
                       <li>
                         <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                          Procurement
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Career
                         </Link>
                       </li>
                     </ul>

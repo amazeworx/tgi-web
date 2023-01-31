@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
@@ -278,8 +279,8 @@ export default function Home() {
               <h3 className="text-4xl text-tgi-darkblue font-black">Latest News</h3>
             </div>
             <div className="grid grid-cols-3 gap-8">
-              <a
-                href="#"
+              <Link
+                href="/vaksinasi-covid"
                 className="block rounded-3xl bg-slate-100 hover:shadow-lg hover:-translate-y-1 transition duration-300"
               >
                 <div className="aspect-w-16 aspect-h-9 rounded-3xl">
@@ -298,9 +299,9 @@ export default function Home() {
                   </h4>
                   <div className="text-slate-500 text-sm mt-2">18 Maret 2021</div>
                 </div>
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/vaksinasi-covid"
                 className="block rounded-3xl bg-slate-100 hover:shadow-lg hover:-translate-y-1 transition duration-300"
               >
                 <div className="aspect-w-16 aspect-h-9 rounded-3xl">
@@ -319,9 +320,9 @@ export default function Home() {
                   </h4>
                   <div className="text-slate-500 text-sm mt-2">2 Maret 2021</div>
                 </div>
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/vaksinasi-covid"
                 className="block rounded-3xl bg-slate-100 hover:shadow-lg hover:-translate-y-1 transition duration-300"
               >
                 <div className="aspect-w-16 aspect-h-9 rounded-3xl">
@@ -340,15 +341,15 @@ export default function Home() {
                   </h4>
                   <div className="text-slate-500 text-sm mt-2">01 Maret 2021</div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="text-center mt-12">
-              <a
-                href="#"
+              <Link
+                href="/vaksinasi-covid"
                 className="btn btn-lg px-8 h-[56px] min-h-[56px] rounded-full border-transparent text-slate-600 bg-slate-200 hover:bg-slate-300 hover:border-transparent"
               >
                 More News
-              </a>
+              </Link>
             </div>
           </div>
         </section>
