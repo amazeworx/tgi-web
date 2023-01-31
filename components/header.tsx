@@ -117,7 +117,7 @@ export default function Header() {
             </div>
             <div className="absolute w-1 h-20 rounded-sm bg-amber-500 top-0 left-1/2 -translate-x-1/2"></div>
           </div>
-          <a href="/" rel="noopener noreferrer" className="block">
+          <Link href="/" className="active:bg-tgi-darkblue">
             <Image
               className=""
               src="/static/images/logo-tgi.svg"
@@ -126,7 +126,7 @@ export default function Header() {
               height={167}
               priority
             />
-          </a>
+          </Link>
           <div className="absolute top-10 right-0 translate-x-full -translate-y-2 w-5 h-20 bg-amber-400 rounded">
             <div className="absolute top-0 -right-1 flex items-center justify-center h-full w-1">
               <div className="flex flex-col gap-y-2">
@@ -228,10 +228,14 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -261,10 +265,14 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -294,10 +302,14 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -327,10 +339,14 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -360,10 +376,14 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                       <li>
-                        <a href="#">Item</a>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Link
+                        </Link>
                       </li>
                     </ul>
                   </div>

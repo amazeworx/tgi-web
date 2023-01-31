@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -166,7 +167,10 @@ export default function Home() {
               <h3 className="text-3xl text-tgi-green text-center font-bold mb-8">Directors</h3>
               <div className="px-28">
                 <div className="grid grid-cols-4 gap-x-10">
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -183,8 +187,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">President Director</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -203,8 +210,11 @@ export default function Home() {
                         Director of Finance and Administration
                       </div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -221,8 +231,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Director of Operations</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -239,7 +252,7 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Director of Business Development</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -247,7 +260,10 @@ export default function Home() {
               <h3 className="text-3xl text-tgi-green text-center font-bold mb-8">Commisioners</h3>
               <div className="px-0">
                 <div className="grid grid-cols-5 gap-x-10">
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -264,8 +280,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">President Commisioner</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -282,8 +301,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Vice President Commissioner</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -300,8 +322,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Commisioner</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -318,8 +343,11 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Commisioner</div>
                     </div>
-                  </a>
-                  <a className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300">
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                  >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
                         className="h-full w-full object-cover"
@@ -336,7 +364,7 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">Commisioner</div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
