@@ -146,7 +146,7 @@ export default function Home() {
               </div>
               <div className="text-center max-w-[280px] mx-auto">
                 <div className="inline-flex items-baseline gap-x-3">
-                  <span className="text-[48px] text-tgi-darkblue font-bold">40.00</span>
+                  <span className="text-[48px] text-tgi-darkblue font-bold">0.13</span>
                   <span className="text-slate-400 text-[32px]">%</span>
                 </div>
                 <div className="text-tgi-green font-medium">
