@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="relative min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
+        <div className="relative min-h-[400px] bg-tgi-darkblue flex flex-col justify-end">
           <div className="text-center pb-16 relative z-10">
             <h1 className="text-white text-5xl font-extrabold">Pengumuman Lelang</h1>
           </div>

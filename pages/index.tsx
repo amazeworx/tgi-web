@@ -32,6 +32,34 @@ export default function Home() {
           <SwiperSlide>
             <Image
               className="absolute inset-0 h-full w-full object-cover z-auto"
+              src="/static/images/banner/hero-04.jpg"
+              alt="Slide 01"
+              width={1920}
+              height={1000}
+              priority
+            />
+            <div className="container max-w-screen-xl px-8 mx-auto h-full relative z-auto">
+              <div className="flex h-full items-end">
+                <div className="text-white p-12 bg-black/60 max-w-3xl mb-12 text-left rounded-2xl">
+                  <h2 className="font-extrabold text-[52px] leading-[1.2em] mb-4">
+                    Transporting natural gas through pipelines
+                  </h2>
+                  <p className="text-3xl">To both domestic and international market</p>
+                  <div className="mt-8">
+                    <a
+                      href="#"
+                      className="btn btn-lg rounded-full bg-tgi-green px-10 hover:bg-green-500"
+                    >
+                      About Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          {/* <SwiperSlide>
+            <Image
+              className="absolute inset-0 h-full w-full object-cover z-auto"
               src="/static/images/home-slide-01.jpg"
               alt="Slide 01"
               width={1920}
@@ -56,7 +84,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
 
         <section className="py-24">
@@ -237,7 +265,7 @@ export default function Home() {
         <section className="py-24 bg-slate-100">
           <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="relative">
-              <div className="aspect-w-16 aspect-h-9 relative shadow-[-0rem_-0rem_0_0_#FFC73C] rounded-[48px] overflow-hidden 3xl:shadow-[-2rem_-2rem_0_0_#FFC73C]">
+              <div className="aspect-w-16 aspect-h-9 relative shadow-[-0rem_-0rem_0_0_#FFC73C] rounded-[48px] overflow-hidden 3xl:shadow-[-0rem_-0rem_0_0_#FFC73C]">
                 <Image
                   className="rounded-[48px]"
                   src="/static/images/home-img-03.jpg"

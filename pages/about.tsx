@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="relative min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
+        <div className="relative min-h-[400px] bg-tgi-darkblue flex flex-col justify-end">
           <div className="text-center pb-16 relative z-10">
             <h1 className="text-white text-5xl font-extrabold">About Us</h1>
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
             <div className="flex">
               <div className="w-1/2">
                 <h2 className="text-4xl font-bold text-tgi-darkblue mb-8">Our Business</h2>
-                <div className="prose">
+                <div className="prose text-justify">
                   <p>
                     PT Transportasi Gas Indonesia (TGI), selanjutnya disebut “TGI” didirikan pada
                     tahun 2002 sebagai perusahaan patungan antara PT Perusahaan Gas Negara Tbk,

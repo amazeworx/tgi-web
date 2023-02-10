@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="relative min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
+        <div className="relative min-h-[400px] bg-tgi-darkblue flex flex-col justify-end">
           <div className="text-center pb-16 relative z-10">
             <h1 className="text-white text-5xl font-extrabold">Operation & Services</h1>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
           ></Image>
         </div>
         <section id="overview" className="py-24 scroll-mt-24">
-          <div className="container px-8 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="flex">
               <div className="w-1/2 pr-24">
                 <Image
@@ -46,7 +46,7 @@ export default function Home() {
                   Overview
                 </h2> */}
                 <h2 className="text-4xl font-bold text-tgi-darkblue mb-8">Overview</h2>
-                <div className="prose mt-8">
+                <div className="prose mt-8 text-justify">
                   <p>
                     In all aspects of our operation, TGI ensures the implementation of prudence. We
                     make sure the pursuit of profit does not cause any harm, be that to the people

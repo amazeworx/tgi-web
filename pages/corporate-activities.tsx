@@ -15,22 +15,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="relative min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
+        <div className="relative min-h-[400px] bg-tgi-darkblue flex flex-col justify-end">
           <div className="text-center pb-16 relative z-10">
             <h1 className="text-white text-5xl font-extrabold">Corporate Activities</h1>
           </div>
           <Image
             className="absolute inset-0 w-full h-full object-cover mix-blend-overlay -z-0"
-            src="/static/images/banner/page-banner-03.jpg"
+            src="/static/images/banner/hero-03.jpg"
             alt=""
             width={1920}
-            height={400}
+            height={1000}
             priority
           ></Image>
         </div>
 
         <section id="overview" className="py-24 scroll-mt-24">
-          <div className="container px-8 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="flex">
               <div className="w-1/2 pr-24">
                 <div className="aspect-w-4 aspect-h-3">
@@ -227,7 +227,7 @@ export default function Home() {
             <div className="flex gap-x-12 mt-12">
               <div className="w-1/2">
                 <div className="prose text-justify">
-                  <h2 className="text-3xl text-left font-bold text-tgi-darkblue mb-6">
+                  <h2 className="text-3xl text-left font-bold text-tgi-green mb-6">
                     Aspek Pengamanan
                   </h2>
                   <p>
@@ -254,7 +254,7 @@ export default function Home() {
               </div>
               <div className="w-1/2">
                 <div className="prose text-justify">
-                  <h2 className="text-3xl text-left font-bold text-tgi-darkblue mb-6">
+                  <h2 className="text-3xl text-left font-bold text-tgi-green mb-6">
                     Aspek Pengelola Lingkungan
                   </h2>
                   <p>
@@ -319,7 +319,7 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="prose text-justify mt-12">
-                  <h2 className="text-3xl text-left font-bold text-tgi-darkblue mb-6">
+                  <h2 className="text-3xl text-left font-bold text-tgi-green mb-6">
                     Kebijakan, Tujuan, Visi dan Misi CSR TGI
                   </h2>
                   <p>
@@ -339,9 +339,9 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="w-1/2">
+              <div className="w-1/2 pl-12">
                 <Image
-                  className="rounded-[24px] border-4 border-solid border-tgi-amber"
+                  className="rounded-[24px]"
                   src="/static/images/about-img-01.jpg"
                   alt=""
                   width={843}
@@ -350,7 +350,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 xl:gap-12 2xl:gap-16 mt-12">
+            <div className="grid grid-cols-3 gap-4 xl:gap-12 2xl:gap-12 mt-12">
               <div className="bg-white rounded-2xl border-t-2 border-r-4 border-b-8 border-l-2 border-tgi-darkblue p-8">
                 <h5 className="text-2xl text-tgi-darkblue font-bold mb-4">Visi CSR</h5>
                 <div className="prose prose-xl">
@@ -389,9 +389,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex mt-12">
+            <div className="flex mt-24">
               <div className="w-1/2 prose text-justify">
-                <h2 className="text-3xl text-left font-bold text-tgi-darkblue mb-6">
+                <h2 className="text-4xl text-left font-bold text-tgi-green mb-6">
                   Lima Pilar Program CSR TGI
                 </h2>
               </div>
