@@ -15,16 +15,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
-          <div className="text-center pb-16">
+        <div className="relative min-h-[300px] bg-tgi-darkblue flex flex-col justify-end">
+          <div className="text-center pb-16 relative z-10">
             <h1 className="text-white text-5xl font-extrabold">About Us</h1>
           </div>
+          <Image
+            className="absolute inset-0 w-full h-full object-cover mix-blend-overlay -z-0"
+            src="/static/images/banner/page-banner-02.jpg"
+            alt=""
+            width={1920}
+            height={400}
+            priority
+          ></Image>
         </div>
+
         <section id="our-business" className="py-24 scroll-mt-24">
-          <div className="container px-6 max-w-screen-xl mx-auto">
+          <div className="container px-8 max-w-screen-xl mx-auto">
             <div className="flex">
               <div className="w-1/2">
-                <h2 className="text-5xl font-extrabold text-tgi-darkblue mb-8">Our Business</h2>
+                <h2 className="text-4xl font-bold text-tgi-darkblue mb-8">Our Business</h2>
                 <div className="prose">
                   <p>
                     PT Transportasi Gas Indonesia (TGI), selanjutnya disebut “TGI” didirikan pada
@@ -83,17 +92,17 @@ export default function Home() {
         </section>
 
         <section id="vision-mission" className="py-24 bg-slate-100 scroll-mt-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
-            <h2 className="text-5xl font-extrabold text-tgi-darkblue mb-8">Vision & Mission</h2>
-            <div className="grid grid-cols-2 gap-24">
-              <div className="bg-white rounded-3xl border-t-2 border-r-4 border-b-8 border-l-2 border-tgi-darkblue p-8">
+          <div className="container max-w-screen-xl px-8 mx-auto">
+            <h2 className="text-4xl font-bold text-tgi-darkblue mb-8">Vision & Mission</h2>
+            <div className="grid grid-cols-2 gap-4 xl:gap-12 2xl:gap-24">
+              <div className="bg-white rounded-2xl border-t-2 border-r-4 border-b-8 border-l-2 border-tgi-darkblue p-8">
                 <h5 className="text-2xl text-tgi-darkblue font-bold mb-4">Visi</h5>
                 <div className="prose prose-xl">
                   Untuk menjadi “Transporter Pilihan” gas alam yang melayani pelanggan di pasar
                   domestik Sumatra dan Batam, serta pasar ekspor Singapura dan Malaysia.
                 </div>
               </div>
-              <div className="bg-white rounded-3xl border-t-2 border-r-4 border-b-8 border-l-2 border-tgi-darkblue p-8">
+              <div className="bg-white rounded-2xl border-t-2 border-r-4 border-b-8 border-l-2 border-tgi-darkblue p-8">
                 <h5 className="text-2xl text-tgi-darkblue font-bold mb-4">Misi</h5>
                 <div className="prose">
                   <ul>
@@ -115,8 +124,8 @@ export default function Home() {
         </section>
 
         <section id="shareholders" className="py-24 bg-white scroll-mt-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
-            <h2 className="text-5xl font-extrabold text-tgi-darkblue mb-8">Shareholders</h2>
+          <div className="container max-w-screen-xl px-8 mx-auto">
+            <h2 className="text-4xl font-bold text-tgi-darkblue mb-8">Shareholders</h2>
             <Image
               className=""
               src="/static/images/about-img-02.jpg"
@@ -159,17 +168,17 @@ export default function Home() {
         </section>
 
         <section id="top-management" className="py-24 bg-slate-100 scroll-mt-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
-            <h2 className="text-5xl font-extrabold text-tgi-darkblue text-center mb-8">
+          <div className="container max-w-screen-xl px-8 mx-auto">
+            <h2 className="text-4xl font-bold text-tgi-darkblue text-center mb-8">
               Top Management
             </h2>
             <div className="mt-16">
               <h3 className="text-3xl text-tgi-green text-center font-bold mb-8">Directors</h3>
-              <div className="px-28">
-                <div className="grid grid-cols-4 gap-x-10">
-                  <Link
-                    href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+              <div className="px-4 xl:px-28">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-10">
+                  <label
+                    htmlFor="anak"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -187,10 +196,10 @@ export default function Home() {
                       </h4>
                       <div className="text-slate-500 text-sm">President Director</div>
                     </div>
-                  </Link>
+                  </label>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -213,7 +222,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -234,7 +243,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -254,6 +263,58 @@ export default function Home() {
                     </div>
                   </Link>
                 </div>
+                <input type="checkbox" id="anak" className="modal-toggle" />
+                <label htmlFor="anak" className="modal cursor-pointer modal-bottom sm:modal-middle">
+                  <label className="modal-box relative !max-w-3xl" htmlFor="">
+                    <label htmlFor="anak" className="btn btn-sm btn-circle absolute right-2 top-2">
+                      ✕
+                    </label>
+                    <div className="flex">
+                      <div className="w-[220px] shrink-0">
+                        <div className="aspect-w-1 aspect-h-1">
+                          <Image
+                            className="h-full w-full object-cover rounded-xl"
+                            src="/static/images/team/anak.jpg"
+                            alt=""
+                            width={226}
+                            height={190}
+                            priority
+                          />
+                        </div>
+                      </div>
+                      <div className="pl-8">
+                        <div className="pt-3 pr-12">
+                          <h4 className="text-tgi-darkblue leading-tight font-semibold text-2xl mb-2">
+                            Anak Agung Putu Bagus Putra Tinggal
+                          </h4>
+                          <div className="text-slate-700 text-base">President Director</div>
+                        </div>
+                        <div className="prose mt-4 text-sm">
+                          <p>
+                            Diangkat sebagai Direktur Utama berdasarkan Circular Resolution dari
+                            Pemegang Saham No. 172.CR-SH/CS-PD/03.2022.
+                          </p>
+                          <ul>
+                            <li>
+                              PT PGAS Telekomunikasi Nusantara, Direktur Teknis & Operasi Mei 2019 –
+                              Juni 2021.
+                            </li>
+                            <li>
+                              Kepala Divisi, Manajemen Transmisi Gas, Transmisi Strategic Business
+                              Unit (SBU) Sumatra – Jawa, PT Perusahaan Gas Negara Tbk. Nov 2015 –
+                              Mei 2019.
+                            </li>
+                            <li>
+                              Asisten VP Manajemen Transportasi Gas, Unit Bisnis Strategis Transmisi
+                              Gas Sumatra Jawa, Cilegon Banten, PT Perusahaan Gas Negara (Persero)
+                              Tbk. Feb 2010 – Mar 2012.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </label>
               </div>
             </div>
             <div className="mt-16">
@@ -262,7 +323,7 @@ export default function Home() {
                 <div className="grid grid-cols-5 gap-x-10">
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -283,7 +344,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -304,7 +365,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -325,7 +386,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -346,7 +407,7 @@ export default function Home() {
                   </Link>
                   <Link
                     href="#"
-                    className="block bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer hover:-translate-y-1 transition duration-300"
+                    className="block bg-white rounded-2xl overflow-hidden shadow-md cursor-pointer hover:shadow-xl transition duration-300"
                   >
                     <div className="aspect-w-6 aspect-h-5">
                       <Image
@@ -372,7 +433,7 @@ export default function Home() {
         </section>
 
         <section id="corporate-identity" className="py-24 bg-white scroll-mt-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="flex">
               <div className="w-1/3">
                 <Image
@@ -385,7 +446,7 @@ export default function Home() {
                 />
               </div>
               <div className="w-2/3 pl-20">
-                <h2 className="text-5xl font-extrabold text-tgi-darkblue text-left mb-8">
+                <h2 className="text-4xl font-bold text-tgi-darkblue text-left mb-8">
                   Corporate Identity
                 </h2>
                 <div className="prose">
@@ -411,9 +472,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="corporate-identity" className="py-24 bg-white scroll-mt-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
-            <h2 className="text-5xl font-extrabold text-tgi-darkblue text-left mb-8">
+        <section id="corporate-culture" className="py-24 bg-white scroll-mt-24">
+          <div className="container max-w-screen-xl px-8 mx-auto">
+            <h2 className="text-4xl font-bold text-tgi-darkblue text-left mb-8">
               Corporate Culture
             </h2>
             <h3 className="text-3xl text-tgi-green text-left font-bold mb-8">ConNECT</h3>
@@ -439,7 +500,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="container px-6 mx-auto mt-16">
+          <div className="container px-8 mx-auto mt-16">
             <div className="">
               <Image
                 className="mx-auto"

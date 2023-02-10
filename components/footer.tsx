@@ -7,19 +7,17 @@ export default function Footer() {
         <div className="flex pb-10">
           <div className="w-1/2 pr-8">
             <div className="flex">
-              <div className="w-1/3">
-                <div className="bg-tgi-green p-8 rounded-b-3xl">
-                  <Image
-                    className=""
-                    src="/static/images/logo-tgi-white.svg"
-                    alt="TGI Logo"
-                    width={130}
-                    height={180}
-                    priority
-                  />
-                </div>
+              <div className="bg-white p-6 flex items-center">
+                <Image
+                  className="h-auto w-[64px] md:w-[80px] lg:w-[92px] xl:w-[100px] 3xl:w-[120px]"
+                  src="/static/images/logo-tgi.svg"
+                  alt="TGI Logo"
+                  width={130}
+                  height={180}
+                  priority
+                />
               </div>
-              <div className="w-2/3 text-white py-10 pl-8">
+              <div className="text-white py-10 pl-8">
                 <h4 className="font-bold">PT Transportasi Gas Indonesia</h4>
                 <div>
                   Jalan Kebon Sirih Raya No. 1,

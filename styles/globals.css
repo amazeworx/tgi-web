@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gcg-table {
+}
+.table {
+  &.gcg-table {
+    :where(th, td) {
+      @apply whitespace-normal align-top;
+    }
+    :where(thead, tfoot) :where(th, td) {
+      @apply bg-tgi-darkblue text-white text-base;
+    }
+  }
+}

@@ -104,7 +104,7 @@ export default function Header() {
         </div>
       </div>
       <div className="absolute top-0 left-12 z-10">
-        <div className="p-4 bg-white rounded-b-3xl relative shadow-md">
+        <div className="bg-white relative shadow-md p-2 lg:p-3 xl:pt-6 xl:pb-5 xl:px-4 3xl:p-4">
           <div className="absolute top-10 left-0 -translate-x-full -translate-y-2 w-5 h-20 bg-amber-400 rounded">
             <div className="absolute top-0 -left-1 flex items-center justify-center h-full w-1">
               <div className="flex flex-col gap-y-2">
@@ -119,7 +119,7 @@ export default function Header() {
           </div>
           <Link href="/" className="active:bg-tgi-darkblue">
             <Image
-              className=""
+              className="h-auto w-[64px] md:w-[80px] lg:w-[92px] xl:w-[100px] 3xl:w-[120px]"
               src="/static/images/logo-tgi.svg"
               alt="TGI Logo"
               width={120}
@@ -142,7 +142,7 @@ export default function Header() {
         </div>
       </div>
       <div className="relative h-16 bg-gradient-to-t from-[#FFB245] via-[#FFC73C] to-[#FFE29B] border-y-2 border-[#FFC73C] shadow-md">
-        <div className="pl-[256px] pr-8 h-full">
+        <div className="pl-[256px] pr-8 h-full xl:pl-[220px] 3xl:pl-[256px]">
           <div className="flex h-full items-center justify-between">
             <nav className="main-nav">
               <ul className="flex gap-x-2">
@@ -150,9 +150,11 @@ export default function Header() {
                   <div className="dropdown dropdown-hover">
                     <label
                       tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
+                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-lg hover:bg-white/40 transition duration-200"
                     >
-                      <span>About Us</span>
+                      <Link href="/about">
+                        <span>About Us</span>
+                      </Link>
                       <svg
                         width="8"
                         height="5"
@@ -207,9 +209,11 @@ export default function Header() {
                   <div className="dropdown dropdown-hover">
                     <label
                       tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
+                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-lg hover:bg-white/40 transition duration-200"
                     >
-                      <span>Operation & Services</span>
+                      <Link href="/operation-services">
+                        <span>Operation & Services</span>
+                      </Link>
                       <svg
                         width="8"
                         height="5"
@@ -228,13 +232,24 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link href="/operation-services" className="active:bg-tgi-darkblue">
+                          Overview
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link
+                          href="/operation-services#gas-pipeline-system"
+                          className="active:bg-tgi-darkblue"
+                        >
+                          Gas Pipeline System
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/operation-services#pipeline-information"
+                          className="active:bg-tgi-darkblue"
+                        >
+                          Pipeline Information
                         </Link>
                       </li>
                     </ul>
@@ -244,9 +259,11 @@ export default function Header() {
                   <div className="dropdown dropdown-hover">
                     <label
                       tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
+                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-lg hover:bg-white/40 transition duration-200"
                     >
-                      <span>Corporate Activities</span>
+                      <Link href="/corporate-activities">
+                        <span>Corporate Activities</span>
+                      </Link>
                       <svg
                         width="8"
                         height="5"
@@ -262,16 +279,26 @@ export default function Header() {
                     </label>
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                      className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-96"
                     >
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link href="/corporate-activities#gcg" className="active:bg-tgi-darkblue">
+                          Good Corporate Governance (GCG)
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link href="/corporate-activities#hsse" className="active:bg-tgi-darkblue">
+                          Health Safety Security & Environment (HSSE)
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/corporate-activities#csr" className="active:bg-tgi-darkblue">
+                          Corporate Social Responsibility (CSR)
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/corporate-activities#award" className="active:bg-tgi-darkblue">
+                          Award & Certificate
                         </Link>
                       </li>
                     </ul>
@@ -281,7 +308,7 @@ export default function Header() {
                   <div className="dropdown dropdown-hover">
                     <label
                       tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
+                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-lg hover:bg-white/40 transition duration-200"
                     >
                       <span>Investor Relations</span>
                       <svg
@@ -299,16 +326,24 @@ export default function Header() {
                     </label>
                     <ul
                       tabIndex={0}
-                      className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                      className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-72"
                     >
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                        <Link
+                          href="/investor-relations/annual-report"
+                          className="active:bg-tgi-darkblue"
+                        >
+                          Annual Report
                         </Link>
                       </li>
                       <li>
                         <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
+                          How to Become Our Customer (SRF)
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#" className="active:bg-tgi-darkblue">
+                          Customer Survey Index
                         </Link>
                       </li>
                     </ul>
@@ -318,7 +353,7 @@ export default function Header() {
                   <div className="dropdown dropdown-hover">
                     <label
                       tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
+                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-lg hover:bg-white/40 transition duration-200"
                     >
                       <span>Information</span>
                       <svg
@@ -344,7 +379,7 @@ export default function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
+                        <Link href="/procurement" className="active:bg-tgi-darkblue">
                           Procurement
                         </Link>
                       </li>
@@ -357,45 +392,16 @@ export default function Header() {
                   </div>
                 </li>
                 <li>
-                  <div className="dropdown dropdown-hover">
-                    <label
-                      tabIndex={0}
-                      className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium"
-                    >
-                      <span>Contact</span>
-                      <svg
-                        width="8"
-                        height="5"
-                        viewBox="0 0 8 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M2.90573 4.50001L0.305725 1.90001C-0.0109418 1.58335 -0.0816084 1.22101 0.093725 0.813012C0.268392 0.404345 0.580725 0.200012 1.03073 0.200012H6.18072C6.63072 0.200012 6.94306 0.404345 7.11772 0.813012C7.29306 1.22101 7.22239 1.58335 6.90573 1.90001L4.30572 4.50001C4.20572 4.60001 4.09739 4.67501 3.98073 4.72501C3.86406 4.77501 3.73906 4.80001 3.60573 4.80001C3.47239 4.80001 3.34739 4.77501 3.23073 4.72501C3.11406 4.67501 3.00573 4.60001 2.90573 4.50001Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </label>
-                    <ul
-                      tabIndex={0}
-                      className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
-                    >
-                      <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
-                          Link
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
+                  <label
+                    tabIndex={0}
+                    className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-md hover:bg-white/40 transition duration-200"
+                  >
+                    <span>Contact</span>
+                  </label>
                 </li>
               </ul>
             </nav>
-            <div className="relative">
+            <div className="relative hidden 3xl:block">
               <div className="absolute -top-3 -left-8 -translate-x-full -translate-y-2 w-5 h-20 bg-amber-400 rounded">
                 <div className="absolute top-0 -left-1 flex items-center justify-center h-full w-1">
                   <div className="flex flex-col gap-y-2">

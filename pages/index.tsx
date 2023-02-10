@@ -60,9 +60,9 @@ export default function Home() {
         </Swiper>
 
         <section className="py-24">
-          <div className="container max-w-screen-xl px-6 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="flex">
-              <div className="w-1/2 pr-16">
+              <div className="w-1/2 pr-10 2xl:pr-16">
                 <Image
                   className="rounded-3xl"
                   src="/static/images/home-img-01.jpg"
@@ -73,7 +73,7 @@ export default function Home() {
                 />
               </div>
               <div className="w-1/2 pl-8 pt-4">
-                <h3 className="text-base mb-8 relative pl-9">
+                <h3 className="text-base mb-8 relative pl-6 2xl:pl-9">
                   <span className="inline-block bg-tgi-green w-5 h-1 rounded-full absolute top-2.5 left-0"></span>
                   OPERATION & SERVICES
                 </h3>
@@ -114,7 +114,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="container max-w-screen-xl px-6 mx-auto mt-20">
+          <div className="container max-w-screen-xl px-8 mx-auto mt-20">
             <div className="grid grid-cols-3 gap-x-8">
               <div className="text-center max-w-[250px] mx-auto">
                 <div className="inline-flex items-baseline gap-x-3">
@@ -149,7 +149,7 @@ export default function Home() {
             backgroundImage: `url("/static/images/home-img-02.jpg")`,
           }}
         >
-          <div className="container max-w-[920px] px-6 mx-auto">
+          <div className="container max-w-[920px] px-8 mx-auto">
             <div className="prose mx-auto text-center">
               <h2 className="font-black text-tgi-darkblue text-4xl mb-8">Corporate Activities </h2>
               <p>
@@ -235,9 +235,9 @@ export default function Home() {
         </section>
 
         <section className="py-24 bg-slate-100">
-          <div className="container max-w-screen-xl px-6 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="relative">
-              <div className="aspect-w-16 aspect-h-9 relative shadow-[-2rem_-2rem_0_0_#FFC73C] rounded-[48px] overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 relative shadow-[-0rem_-0rem_0_0_#FFC73C] rounded-[48px] overflow-hidden 3xl:shadow-[-2rem_-2rem_0_0_#FFC73C]">
                 <Image
                   className="rounded-[48px]"
                   src="/static/images/home-img-03.jpg"
@@ -274,7 +274,7 @@ export default function Home() {
         </section>
 
         <section className="py-24 bg-white">
-          <div className="container max-w-screen-xl px-6 mx-auto">
+          <div className="container max-w-screen-xl px-8 mx-auto">
             <div className="mb-8">
               <h3 className="text-4xl text-tgi-darkblue font-black">Latest News</h3>
             </div>

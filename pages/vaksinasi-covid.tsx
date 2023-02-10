@@ -15,13 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
-        <div className="min-h-[300px] bg-tgi-darkblue flex flex-col pb-44">
-          <div className="text-center pt-48 pb-16 max-w-xl mx-auto">
-            <div className="text-white text-center text-xl mb-6">NEWS</div>
-            <h1 className="text-white text-5xl font-extrabold leading-tight">
-              Vaksinasi Covid - 19 Regional Office 1 Jambi
-            </h1>
-            <div className="text-white text-center text-xl mt-6">Kamis, 18 Maret 2021</div>
+        <div className="bg-tgi-darkblue flex flex-col pb-48">
+          <div className="text-center pt-40 pb-8 max-w-xl mx-auto">
+            <div className="text-white text-center text-xl mb-0">
+              Home&nbsp;&nbsp;&nbsp;&raquo;&nbsp;&nbsp;&nbsp;News
+            </div>
           </div>
         </div>
         <div className="container max-w-screen-lg mx-auto -mt-48">
@@ -34,9 +32,13 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="bg-white pt-12 pb-24">
+        <div className="bg-white pt-10 pb-24">
           <div className="container max-w-prose mx-auto">
             <div className="prose">
+              <h1 className="text-[2.25rem] font-bold leading-tight mb-4">
+                Vaksinasi Covid - 19 Regional Office 1 Jambi
+              </h1>
+              <div className="mt-4 mb-6 text-slate-500">Kamis, 18 Maret 2021</div>
               <p>
                 Pada hari Kamis, 18 Maret 2021 bertempat di kantor TGI wilayah Jambi,
                 diselenggarakan vaksinasi bagi pegawai TGI wilayah Jambi, pelaksanaan vaksinasi ini
