@@ -1,9 +1,43 @@
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Header() {
+import classNames from 'classnames'
+
+const Header = () => {
+  const [isShrunk, setShrunk] = useState(false)
+
+  useEffect(() => {
+    // console.log('USE EFFECT')
+    // const onScroll = () => {
+    //   console.log('scrolled')
+    //   setShrunk((isShrunk) => {
+    //     if (
+    //       !isShrunk &&
+    //       (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+    //     ) {
+    //       return true
+    //     }
+    //     if (isShrunk && document.body.scrollTop < 4 && document.documentElement.scrollTop < 4) {
+    //       return false
+    //     }
+    //     return isShrunk
+    //   })
+    // }
+    // window.addEventListener('scroll', onScroll)
+    // return () => window.removeEventListener('scroll', onScroll)
+    // window.addEventListener('scroll', () => {
+    //   setShrunk(window.scrollY > 50)
+    //   console.log(window.scrollY)
+    // })
+  }, [])
+
   return (
-    <header className="bg-tgi-darkblue pt-0 fixed top-0 left-0 right-0 z-50">
+    <header
+      className={classNames('bg-tgi-darkblue pt-0 fixed top-0 left-0 right-0 z-50 header', {
+        'header-shrink': isShrunk,
+      })}
+    >
       <div className="h-10 py-2 text-right px-8 flex justify-end gap-x-6">
         <div className="inline-flex gap-x-2">
           <a href="#" className="p-px text-white/90 hover:text-white/100">
@@ -296,11 +330,11 @@ export default function Header() {
                           Corporate Social Responsibility (CSR)
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/corporate-activities#award" className="active:bg-tgi-darkblue">
                           Award & Certificate
                         </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </li>
@@ -337,7 +371,10 @@ export default function Header() {
                         </Link>
                       </li>
                       <li>
-                        <Link href="#" className="active:bg-tgi-darkblue">
+                        <Link
+                          href="/investor-relations/become-customer"
+                          className="active:bg-tgi-darkblue"
+                        >
                           How to Become Our Customer (SRF)
                         </Link>
                       </li>
@@ -374,7 +411,7 @@ export default function Header() {
                       className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                     >
                       <li>
-                        <Link href="/vaksinasi-covid" className="active:bg-tgi-darkblue">
+                        <Link href="/news" className="active:bg-tgi-darkblue">
                           News
                         </Link>
                       </li>
@@ -396,7 +433,7 @@ export default function Header() {
                     tabIndex={0}
                     className="inline-flex gap-x-2 items-center px-4 py-2 cursor-pointer font-medium rounded-md hover:bg-white/40 transition duration-200"
                   >
-                    <span>Contact</span>
+                    <Link href="/contact">Contact</Link>
                   </label>
                 </li>
               </ul>
@@ -452,3 +489,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header

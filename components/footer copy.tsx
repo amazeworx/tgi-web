@@ -6,20 +6,20 @@ export default function Footer() {
       <div className="container max-w-screen-xl px-6 mx-auto">
         <div className="flex pb-10">
           <div className="w-1/2 pr-8">
-            <div className="flex items-center py-10">
-              <div className="flex items-center">
+            <div className="flex">
+              <div className="bg-white p-6 flex items-center">
                 <Image
                   className="h-auto w-[64px] md:w-[80px] lg:w-[92px] xl:w-[100px] 3xl:w-[120px]"
-                  src="/static/images/logo-tgi-white.svg"
+                  src="/static/images/logo-tgi.svg"
                   alt="TGI Logo"
                   width={130}
                   height={180}
                   priority
                 />
               </div>
-              <div className="text-white pl-8">
+              <div className="text-white py-10 pl-8">
                 <h4 className="font-bold">PT Transportasi Gas Indonesia</h4>
-                <div className="text-sm">
+                <div>
                   Jalan Kebon Sirih Raya No. 1,
                   <br />
                   Jakarta 10340, Indonesia
@@ -106,9 +106,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-black/10 py-4">
-        <div className="text-white text-center text-xs">
-          All Rights Reserved © 2023. Transgasindo
-        </div>
+        <div className="text-white text-center">All Rights Reserved © 2023. Transgasindo</div>
       </div>
     </footer>
   )

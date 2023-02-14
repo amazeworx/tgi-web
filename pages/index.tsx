@@ -283,10 +283,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex mt-8">
-              <div className="w-1/2">
-                <h3 className="text-4xl text-tgi-darkblue font-black">Trusted By</h3>
-              </div>
+            <div className="flex mt-8 justify-center">
               <div className="w-1/2">
                 <Image
                   className="rounded-3xl"
