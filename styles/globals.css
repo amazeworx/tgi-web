@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 .gcg-table {
 }
 .table {
@@ -11,6 +17,41 @@
     }
     :where(thead, tfoot) :where(th, td) {
       @apply bg-tgi-darkblue text-white text-base;
+    }
+  }
+}
+
+.header,
+.header-logo,
+.header-top,
+.header-top > *,
+.header-bottom,
+.header-bottom .header-bottom--inner,
+.search-container .pipe-screw {
+  @apply transition-all duration-500;
+}
+.header-logo {
+  @apply origin-top-left;
+}
+.header-shrink {
+  .header-logo {
+    @apply scale-[66%];
+  }
+  .header-top {
+    @apply h-6;
+    > * {
+      @apply opacity-0;
+    }
+  }
+  .header-bottom {
+    @apply h-12;
+    .header-bottom--inner {
+      @apply pl-[256px] xl:pl-[180px];
+    }
+  }
+  .search-container {
+    .pipe-screw {
+      @apply scale-[66%];
     }
   }
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Header from '@/components/header'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -201,7 +202,7 @@ export default function Home() {
                       src="/static/images/icon-gcg.png"
                       alt=""
                       width={100}
-                      height={100}
+                      height={99}
                       priority
                     />
                     <h4 className="text-xl text-tgi-darkblue leading-tight mt-4">
@@ -221,7 +222,7 @@ export default function Home() {
                       src="/static/images/icon-csr.png"
                       alt=""
                       width={100}
-                      height={100}
+                      height={99}
                       priority
                     />
                     <h4 className="text-xl text-tgi-darkblue leading-tight mt-4">
@@ -241,7 +242,7 @@ export default function Home() {
                       src="/static/images/icon-hse.png"
                       alt=""
                       width={100}
-                      height={100}
+                      height={99}
                       priority
                     />
                     <h4 className="text-xl text-tgi-darkblue leading-tight mt-4">
