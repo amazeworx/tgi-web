@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className="">
         <Swiper
-          className="h-[85vh]"
+          className="h-[100vh]"
           modules={[Navigation, Pagination, A11y]}
           spaceBetween={0}
           slidesPerView={1}
@@ -41,7 +41,7 @@ export default function Home() {
             />
             <div className="container max-w-screen-xl px-8 mx-auto h-full relative z-auto">
               <div className="flex h-full items-end">
-                <div className="text-white p-12 bg-black/60 max-w-3xl mb-12 text-left rounded-2xl">
+                <div className="text-white p-12 bg-black/60 max-w-3xl mb-20 text-left rounded-2xl">
                   <h2 className="font-extrabold text-[52px] leading-[1.2em] mb-4">
                     Transporting natural gas through pipelines
                   </h2>
