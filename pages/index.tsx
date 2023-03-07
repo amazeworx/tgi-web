@@ -284,18 +284,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex mt-8 justify-center">
-              <div className="w-1/2">
-                <Image
-                  className="rounded-3xl"
-                  src="/static/images/home-img-04.png"
-                  alt=""
-                  width={758}
-                  height={243}
-                  priority
-                />
-              </div>
-            </div>
           </div>
         </section>
 
